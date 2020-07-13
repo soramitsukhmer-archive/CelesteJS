@@ -14,11 +14,11 @@ export default class Functionality implements FunctionalityContract {
      * @param data
      */
     constructor(data: FunctionalityType) {
-        this.id = data.id || null
-        this.name = data.name
-        this.type = data.type
-        this.function = data.function
-        this.description = data.description || null
-        this.accessRights = data.accessRights || []
+        this.id = data.id || null;
+        this.name = data.name;
+        this.type = data.type;
+        this.function = data.function;
+        this.description = data.description || null;
+        this.accessRights = data.accessRights || [];
     }
 }

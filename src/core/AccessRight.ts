@@ -9,7 +9,7 @@ export default class AccessRight implements AccessRightContract {
      * @param state
      */
     constructor(data: AccessRightType) {
-        this.id = data.id || null
-        this.name = data.name
+        this.id = data.id || null;
+        this.name = data.name;
     }
 }
