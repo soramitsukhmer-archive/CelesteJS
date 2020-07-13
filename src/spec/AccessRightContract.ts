@@ -1,4 +1,4 @@
-export interface AccessRightContract {
+export type AccessRightContract {
     id: Number;
     name: String;
 }

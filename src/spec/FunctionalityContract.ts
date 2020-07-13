@@ -1,6 +1,6 @@
 import { AccessRightContract } from './AccessRightContract'
 
-export interface FunctionalityContract {
+export type FunctionalityContract = {
     id: Number;
     name: String;
     type: String;
