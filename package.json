@@ -1,5 +1,5 @@
 {
-  "name": "celestejs",
+  "name": "@soramitsukhmer/celestejs",
   "version": "0.1.0",
   "main": "index.js",
   "repository": "git@github.com:soramitsukhmer/CelesteJS.git",
