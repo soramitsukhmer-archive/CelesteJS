@@ -1,6 +1,7 @@
 import { CelesteContract } from './spec/CelesteContract'
-import { FunctionalityContract } from './spec/FunctionalityContract'
+import { FunctionalityContract, FunctionalityGroupContract } from './spec/FunctionalityContract'
 import { AccessRightContract } from './spec/AccessRightContract'
+import { createGroupByKey } from './utils';
 
 export default class Celeste implements CelesteContract {
     private functionalities: Array<FunctionalityContract> = [];
@@ -62,6 +63,14 @@ export default class Celeste implements CelesteContract {
         if (index === -1) this.throwAccessRightsNotFoundException()
         const item = this.rights[index];
         return { index, item };
+    }
+
+    /**
+     * Create a group of Functionalities
+     */
+    group(key: string = 'type'): FunctionalityGroupContract {
+        const factory = createGroupByKey(key)
+        return factory(this.functionalities);
     }
 
     /**

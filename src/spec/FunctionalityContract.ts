@@ -17,3 +17,5 @@ export type FunctionalityType = {
     description?: string;
     accessRights?: Array<AccessRightContract>;
 };
+
+export type FunctionalityGroupContract = Map<string, FunctionalityContract[]>;
