@@ -1,6 +1,6 @@
 import { CelesteContract } from './spec/CelesteContract';
-import { FunctionalityContract, FunctionalityGroupContract } from './spec/FunctionalityContract';
 import { AccessRightContract } from './spec/AccessRightContract';
+import { FunctionalityContract, FunctionalityGroupContract, FunctionalityTreeContract } from './spec/FunctionalityContract';
 export default class Celeste implements CelesteContract {
     private functionalities;
     private rights;
@@ -41,6 +41,10 @@ export default class Celeste implements CelesteContract {
      * Create a group of Functionalities
      */
     group(key?: string): FunctionalityGroupContract;
+    /**
+     * Create a tree view of Functionalities
+     */
+    tree(key?: string): FunctionalityTreeContract;
     /**
      * Throw functionality not found exception
      */

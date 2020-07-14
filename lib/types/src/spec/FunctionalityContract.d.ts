@@ -16,3 +16,9 @@ export declare type FunctionalityType = {
     accessRights?: Array<AccessRightContract>;
 };
 export declare type FunctionalityGroupContract = Map<string, FunctionalityContract[]>;
+export declare type FunctionalityTreeContract = Array<{
+    id: string;
+    name: string;
+    children: [];
+    _cacheKey: any;
+}>;
