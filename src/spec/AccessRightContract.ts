@@ -1,9 +1,9 @@
 export interface AccessRightContract {
-    id: Number;
-    name: String;
+    id: number;
+    name: string;
 }
 
 export type AccessRightType = {
-    id?: Number;
-    name: String;
+    id?: number;
+    name: string;
 }

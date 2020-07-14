@@ -1,19 +1,19 @@
 import { AccessRightContract } from './AccessRightContract'
 
 export interface FunctionalityContract {
-    id: Number;
-    name: String;
-    type: String;
-    function: String;
-    description: String;
+    id: number;
+    name: string;
+    type: string;
+    function: string;
+    description: string;
     accessRights: Array<AccessRightContract>
 }
 
 export type FunctionalityType = {
-    id?: Number;
-    name: String;
-    type: String;
-    function: String;
-    description?: String;
+    id?: number;
+    name: string;
+    type: string;
+    function: string;
+    description?: string;
     accessRights?: Array<AccessRightContract>;
 };

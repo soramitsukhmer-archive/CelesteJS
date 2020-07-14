@@ -1,8 +1,8 @@
 import { AccessRightContract, AccessRightType } from '../spec/AccessRightContract';
 
 export default class AccessRight implements AccessRightContract {
-    public id: Number;
-    public name: String;
+    public id: number;
+    public name: string;
 
     /**
      * Create a new instance of AccessRight

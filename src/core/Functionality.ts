@@ -2,11 +2,11 @@ import { FunctionalityContract, FunctionalityType } from '../spec/FunctionalityC
 import { AccessRightContract } from "../spec/AccessRightContract";
 
 export default class Functionality implements FunctionalityContract {
-    public id: Number;
-    public name: String;
-    public type: String;
-    public function: String;
-    public description: String;
+    public id: number;
+    public name: string;
+    public type: string;
+    public function: string;
+    public description: string;
     public accessRights: Array<AccessRightContract>
 
     /**

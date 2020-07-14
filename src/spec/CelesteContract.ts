@@ -2,8 +2,8 @@ import { FunctionalityContract } from './FunctionalityContract'
 import { AccessRightContract } from './AccessRightContract'
 
 export interface CelesteContract {
-    addFunctionality(functionalityID: Number): this;
-    addAccessRights(functionalityID: Number, rightsID: Number): this;
-    findFunctionalityById(id: Number): {index: Number, item: FunctionalityContract };
-    findRightsById(id: Number): {index: Number, item: AccessRightContract };
+    addFunctionality(functionalityID: number): this;
+    addAccessRights(functionalityID: number, rightsID: number): this;
+    findFunctionalityById(id: number): {index: number, item: FunctionalityContract };
+    findRightsById(id: number): {index: number, item: AccessRightContract };
 }
