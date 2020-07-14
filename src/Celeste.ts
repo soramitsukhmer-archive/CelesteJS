@@ -1,7 +1,12 @@
 import { CelesteContract } from './spec/CelesteContract'
-import { FunctionalityContract, FunctionalityGroupContract } from './spec/FunctionalityContract'
 import { AccessRightContract } from './spec/AccessRightContract'
 import { createGroupByKey } from './utils';
+import { createTreeView } from './utils/createTreeView';
+import {
+    FunctionalityContract,
+    FunctionalityGroupContract,
+    FunctionalityTreeContract
+} from './spec/FunctionalityContract'
 
 export default class Celeste implements CelesteContract {
     private functionalities: Array<FunctionalityContract> = [];
@@ -71,6 +76,14 @@ export default class Celeste implements CelesteContract {
     group(key: string = 'type'): FunctionalityGroupContract {
         const factory = createGroupByKey(key)
         return factory(this.functionalities);
+    }
+
+    /**
+     * Create a tree view of Functionalities
+     */
+    tree(key: string = "type"): FunctionalityTreeContract {
+        const factory = createTreeView(key)
+        return factory(this.functionalities)
     }
 
     /**

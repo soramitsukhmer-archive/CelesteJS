@@ -19,3 +19,10 @@ export type FunctionalityType = {
 };
 
 export type FunctionalityGroupContract = Map<string, FunctionalityContract[]>;
+
+export type FunctionalityTreeContract = Array<{
+    id: string,
+    name: string,
+    children: [],
+    _cacheKey: any,
+}>
