@@ -2,6 +2,6 @@ import { FunctionalityContract } from './FunctionalityContract'
 import { AccessRightContract } from './AccessRightContract'
 
 export interface CelesteContract {
-    addFunctionality(functionality: FunctionalityContract): this;
-    addAccessRights(functionalityID: Number, rights: AccessRightContract): this;
+    addFunctionality(functionalityID: Number): this;
+    addAccessRights(functionalityID: Number, rightsID: Number): this;
 }
